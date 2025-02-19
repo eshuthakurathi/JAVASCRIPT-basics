@@ -16,7 +16,7 @@ function hello(error, src) {
     if (error) {
             console.log(error)
             return
-    }
+        }
     alert('Hello World!' + src);
 }
 

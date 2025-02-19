@@ -42,7 +42,9 @@ function goodmorning(error, src) {
     
     if (error) {
       console.log(error)
+      sendEmergencyMessagetoCeo();  //if error occurs a message is sent
       return
+  
     }
     alert('Good morning' + src);
 }

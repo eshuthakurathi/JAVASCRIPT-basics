@@ -6,6 +6,7 @@ let p1 = new Promise((resolve, reject) => {
 })
 
 // promise chaining;we wait for the result of the handler attached after running, then the result is used to do some other work
+// promise chaining pass the result to each other
 p1.then(() => {
     console.log("Hurray")
     return new Promise((resolve, reject) => {
@@ -17,6 +18,7 @@ p1.then(() => {
 
 
 // another handler is attached; this will woek parallelly with all the handlers!
+// this does not pass the result to each other
 p1.then(() => {
     console.log("Congratulations this promise is now resolved")
 })

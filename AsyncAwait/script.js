@@ -14,6 +14,7 @@ async function first(){  //by using async this function is made to return a prom
         }, 1000)
     })
 
+    
     // delhiWeather.then(alert)
     // bangaloreWeather.then(alert)
 
